@@ -31,3 +31,10 @@ case $rand in
 esac
 
 cowsay -f $animal `fortune`
+
+# Some add ons
+export XDG_CONFIG_HOME="$HOME/.config"
+
+# Kinect Libs
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH/usr/local/lib64/pkgconfig"
+
