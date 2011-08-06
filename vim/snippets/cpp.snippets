@@ -1,6 +1,5 @@
 # Read File Into Vector
 snippet readfile
-
 	std::vector<char> v;
 	if (FILE *${2:fp} = fopen(${1:"filename"}, "r")) {
 
@@ -11,28 +10,26 @@ snippet readfile
 		fclose($2);
 
 	}${3}
-
 # std::map
 snippet map
 	std::map<${1:key}, ${2:value}> map${3};
-
 # std::vector
 snippet vector
 	std::vector<${1:char}> v${2};
-
 # Namespace
 snippet ns
-
 	namespace ${1:`Filename('', 'my')`} {
 
 		${2}
 
 	} /* $1 */
-
 # Class
 snippet cl
-
 	class ${1:`Filename('$1_t', 'name')`} {
+
+		private:
+
+		${3:/* data */}
 
 		public:
 
@@ -40,16 +37,11 @@ snippet cl
 
 		virtual ~$1 ();
 
-		private:
-
-		${3:/* data */}
-
 	};
-
 snippet fori
-
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
 
 		${4:/* code */}
 
 	}
+	${5}
