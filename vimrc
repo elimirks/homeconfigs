@@ -14,12 +14,12 @@ set ts=2
 set number
 
 " Auto indent
-" set cindent
-" set smartindent
+set cindent
+set smartindent
 set autoindent
-" set tabstop=2
-" set shiftwidth=2
-" set cinkeys=0{,0},:,0#,!^F
+set tabstop=2
+set shiftwidth=2
+set cinkeys=0{,0},:,0#,!^F
 
 " set the mouse to be able to interact
 set mouse=a
