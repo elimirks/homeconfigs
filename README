@@ -1,5 +1,4 @@
-Greetings... mortal earthings...
-
+Greetings
 	Feel free to take what you want from my list or rc's!
 	
 	Install:
@@ -27,4 +26,4 @@ Greetings... mortal earthings...
 				ln -s /rc/conkyrc .conkyrc
 				ln -ds /rc/vim .vim
 
-bb
+
