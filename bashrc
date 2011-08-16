@@ -35,14 +35,14 @@ txtrst='\e[0m'    # Text Reset
 
 # Set some aliases that spice up programs
 alias vi='vim'
-alias ls='ls --color=auto -F'
+alias ls='ls -h --color=auto -F'
 alias grep='grep --color=auto'
 
 # Add some vim characteristics
 alias :q="exit"
 
 #Console display
-PS1="${bldgrn}\u ${txtgrn}\h ${txtblu}\t ${bldblu}\w \n${txtrst}$ "
+PS1="${bldgrn}\u ${txtgrn}\h ${txtblu}\t ${bldblu}\w ${txtwht}\n$ "
 
 # Bash completion O.O
 if [ -f /etc/bash_completion ]; then
