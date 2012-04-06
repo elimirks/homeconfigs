@@ -1,0 +1,5 @@
+Hello world, have fun with my configs.
+
+urxvtrc = .Xdefaults
+openboxrc = .config/openbox/rc.xml
+
