@@ -2,4 +2,10 @@ Hello world, have fun with my configs.
 
 urxvtrc = .Xdefaults
 openboxrc = .config/openbox/rc.xml
+tmuxrc = .tmux.conf
+
+DEPENDENCIES
+
+pv
+grc
 

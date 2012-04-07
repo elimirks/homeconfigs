@@ -41,8 +41,10 @@ promptinit
 
 setopt histignorealldups sharehistory
 
+# What does this do?
 local -A pc
 
+# Just some variable to keep the PROMPT evironment var clean
 pc['user']=${1:-'red'}
 pc['host']=${1:-'green'}
 pc['time']=${2:-'white'}
@@ -56,10 +58,27 @@ PROMPT="%F{$pc['user']}%n %F{$pc['host']}%m%F{$pc['time']} %T%f %F{$pc['pwd']}%~
 # Nice colors
 alias grep='grep --color=always'
 alias ls='ls --color=always'
+
+# grc colors.. this is a very neat program
+alias ping='grc ping'
+alias traceroute='grc traceroute'
+alias gcc='grc gcc'
+alias make='grc make'
+alias netstat='grc netstat'
+alias diff='grc diff'
+alias last='grc last'
+alias ldap='grc ldap'
+alias cvs='grc cvs'
+alias configure='grc ./configure'
+
+# Crazy, short, and cool core util additions
+
+function cl { cd $@ && ls }
+function mkc { mkdir $@ && cd $1 }
 alias ll='ls -l'
 alias la='ls -la'
 
-# emacs style
+# emacs style keybindings.. this helps the up arrow issues
 bindkey -e
 
 # Use %_ to show why you are in a continued prompt
