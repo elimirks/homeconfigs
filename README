@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Greetings
 	Feel free to take what you want from my list or rc's!
 	
@@ -26,4 +27,16 @@ Greetings
 				ln -s /rc/conkyrc .conkyrc
 				ln -ds /rc/vim .vim
 
+=======
+Hello world, have fun with my configs.
+
+urxvtrc = .Xdefaults
+openboxrc = .config/openbox/rc.xml
+tmuxrc = .tmux.conf
+
+DEPENDENCIES
+
+pv
+grc
+>>>>>>> 51cd8a863fd6d3663e9004a2d0204f66d69f7804
 
