@@ -1,11 +1,14 @@
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages available in Debian.
-runtime! debian.vim
+" The following are commented out as they cause vim to behave a lot
+" differently from regular Vi. They are highly recommended though.
+"set showcmd		" Show (partial) command in status line.
+"set showmatch		" Show matching brackets.
+"set ignorecase		" Do case insensitive matching
+"set smartcase		" Do smart case matching
+"set incsearch		" Incremental search
+"set autowrite		" Automatically save before commands like :next and :make
+"set hidden             " Hide buffers when they are abandoned
 
-" Source a global configuration file if available
-if filereadable("/etc/vim/vimrc.local")
-  source /etc/vim/vimrc.local
-endif
+set background=light
 
 " Set the tab-space to 2
 set ts=2
@@ -21,8 +24,11 @@ set tabstop=2
 set shiftwidth=2
 set cinkeys=0{,0},:,0#,!^F
 
-" set the mouse to be able to interact
-set mouse=a
+" Scroll padding
+set scrolloff=10
+
+" Highlight search results
+set hlsearch
 
 " put on the syntax!
 syntax on
@@ -34,4 +40,26 @@ endif
 
 " Map :w!! to ask for sudo password and save as root
 cmap w!! %!sudo tee > /dev/null %
+
+" Save the undo buffer
+set hidden
+
+" Auto save folds
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
+
+" Easy NERDTree access
+cmap NT NERDTreeToggle
+
+"
+nmap <S-j> 10j
+nmap <S-k> 10k
+nmap <S-h> 10h
+nmap <S-l> 10l
+
+" No more arrow keys in insert mode!
+imap <C-j> <Down>
+imap <C-k> <Up>
+imap <C-h> <Left>
+imap <C-l> <Right>
 

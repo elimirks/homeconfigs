@@ -1,0 +1,2 @@
+checksyntax.vba: call delete('/home/elijah/.vim/doc/checksyntax.txt')|call delete('/home/elijah/.vim/plugin/checksyntax.vim')|call delete('/home/elijah/.vim/autoload/checksyntax.vim')
+supertab.vba: call delete('/home/elijah/.vim/doc/supertab.txt')|call delete('/home/elijah/.vim/plugin/supertab.vim')
