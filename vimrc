@@ -63,3 +63,7 @@ imap <C-k> <Up>
 imap <C-h> <Left>
 imap <C-l> <Right>
 
+" Yay colors ^_^
+set t_Co=256
+colorscheme delek
+
