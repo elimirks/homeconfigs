@@ -17,8 +17,14 @@ urxvt*color13: #AD7FA8
 urxvt*color14: #34E2E2
 urxvt*color15: #EEEEEC
 urxvt*font: xft:Bitstream\ Vera\ Sans\ Mono:style=roman:pixelsize=12
-urxvt*scrollBar: false
 
-URxvt*confirmExit: true
-URxvt*confirmClose: true
+urxvt*scrollBar: false
+urxvt*internalBorder: 8
+urxvt*transparent: true
+urxvt*shading: 10
+
+urxvt*confirmExit: true
+urxvt*confirmClose: true
+
+urxvt*urlLauncher: chromium
 
