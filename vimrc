@@ -66,4 +66,6 @@ imap <C-l> <Right>
 " Yay colors ^_^
 set t_Co=256
 colorscheme delek
+" The default colours for searches are a bit hard to see
+hi Search ctermfg=0 ctermbg=11
 

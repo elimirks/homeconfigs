@@ -10,7 +10,7 @@ unbind C-Down
 unbind C-c
 
 # Multiple workspaces
-exec rpws init 6 -k
+exec rpws init 4 -k
 
 definekey top C-M-l exec rpws next
 definekey top C-M-h exec rpws prev
@@ -20,6 +20,9 @@ set border 0
 unbind c
 bind c exec urxvt -e tmux
 bind w exec uzbl-tabbed
+
+# Switch screens (for multihead)
+bind d nextscreen
 
 # Nice vim keys for moving around
 bind h focusleft
