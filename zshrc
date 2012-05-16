@@ -87,7 +87,7 @@ PROMPT2="%F{$pc['pwd']}%_> %F{$pc['com']}"
 # Set the key mapping style to 'emacs' or 'vi'.
 zstyle ':omz:editor' keymap 'vi'
 
-# Nice auto correch prompt
+# Nice auto correct prompt
 setopt correct
 autoload -U colors && colors
 export SPROMPT="Correct $fg[red]%R$reset_color to $fg[green]%r?$reset_color (Yes, No, Abort, Edit) "
@@ -167,4 +167,6 @@ bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 bindkey "\e[3~" delete-char
 
+# Environment
+export EDITOR='vim'
 
