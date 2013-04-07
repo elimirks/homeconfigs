@@ -1,42 +1,5 @@
-<<<<<<< HEAD
-Greetings
-	Feel free to take what you want from my list or rc's!
-	
-	Install:
-		
-		If you want to stay up-to-date with me, Execute the following
-
-			As Root:			
-
-				mkdir /rc
-				chown /rc USERNAME:users
-
-			As the User:
-
-				cd /rc
-				git init
-				git pull git://github.com/strongdrink/rc.git
-				cd ~
-			
-			If you choose to remove your old configs.. complete the following
-			Just pick and choose which ones you want
-
-				rm -rf .vimrc .bashrc .conkyrc .vim
-				ln -s /rc/vimrc .vimrc
-				ln -s /rc/bashrc .bashrc
-				ln -s /rc/conkyrc .conkyrc
-				ln -ds /rc/vim .vim
-
-=======
 Hello world, have fun with my configs.
 
 urxvtrc = .Xdefaults
 openboxrc = .config/openbox/rc.xml
 tmuxrc = .tmux.conf
-
-DEPENDENCIES
-
-pv
-grc
->>>>>>> 51cd8a863fd6d3663e9004a2d0204f66d69f7804
-
